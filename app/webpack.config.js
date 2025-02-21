@@ -5,10 +5,10 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   entry: {
-    global: path.resolve(__dirname, "app/global.js"),
-    index: path.resolve(__dirname, "app/index.js"),
-    listProducts: [path.resolve(__dirname, "app/list-products.js"), path.resolve(__dirname, "app/list-products.scss")],
-    addProducts: [path.resolve(__dirname, "app/add-products.js"), path.resolve(__dirname, "app/add-products.scss")],
+    global: path.resolve(__dirname, "global.js"),
+    index: path.resolve(__dirname, "index.js"),
+    listProducts: [path.resolve(__dirname, "list-products.js"), path.resolve(__dirname, "list-products.scss")],
+    addProducts: [path.resolve(__dirname, "add-products.js"), path.resolve(__dirname, "add-products.scss")],
   },
   output: {
     path: path.resolve(__dirname, "dist"),
