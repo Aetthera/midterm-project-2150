@@ -9,20 +9,173 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Home</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3 active" href="list-products.html">Products</a>
+            </div>
+        </div>
+
+        <!-- Page Content Wrapper -->
+        <div id="page-content-wrapper">
+            <!-- Top Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="list-products.html">Products</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Messages</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Your Name</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
     <div class="container">
         <h1>Our Products</h1>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="assets/images/product1.jpg" class="card-img-top" alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">$10.99</p>
-                        <button class="btn btn-primary">Add to Cart</button>
-                    </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lip Gloss</h5>
+                  <p class="card-text">A hydrating, high-shine lip gloss with a non-sticky formula, 
+                    enriched with nourishing oils for a smooth, plump, and glossy finish.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
                 </div>
-            </div>
-            <!-- Repeat for 12 products -->
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lighter</h5>
+                  <p class="card-text">A sleek, refillable lighter with a windproof flame, 
+                    designed for reliability and style, perfect for everyday use or special occasions.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Body Oil</h5>
+                  <p class="card-text">A lightweight, fast-absorbing body oil infused with nourishing botanicals, 
+                    leaving skin silky, hydrated, and glowing with a radiant finish.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pine Chews</h5>
+                  <p class="card-text">Natural, aromatic pine chews packed with refreshing flavor, offering a 
+                    satisfying texture and breath-freshening benefits, perfect for a revitalizing chew experience.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cream</h5>
+                  <p class="card-text">A rich, hydrating cream infused with nourishing ingredients, providing deep 
+                    moisture, smoothness, and a radiant glow for soft, healthy skin.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camera</h5>
+                  <p class="card-text">A high-resolution camera with advanced autofocus, low-light performance, and 
+                    seamless connectivity, perfect for capturing sharp, vibrant, and professional-quality images.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Coca-Cola</h5>
+                  <p class="card-text">A refreshing, fizzy Coca-Cola with a signature blend of caramel 
+                    sweetness and crisp carbonation, delivering an iconic, invigorating taste experience.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Glass Jars</h5>
+                  <p class="card-text">Durable, reusable glass jars with airtight lids, perfect for storing food, 
+                    spices, or crafts while maintaining freshness and organization effortlessly.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Perfume</h5>
+                  <p class="card-text">An elegant, long-lasting perfume with a captivating blend of floral, 
+                    fruity, and woody notes, leaving a luxurious and unforgettable scent.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camera Lens</h5>
+                  <p class="card-text">A high-precision camera lens with multi-coated optics, fast autofocus, 
+                    and superior clarity, perfect for capturing sharp, detailed, and vibrant images.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Powder</h5>
+                  <p class="card-text">A lightweight, silky makeup powder that controls shine, blurs imperfections, 
+                    and sets makeup for a smooth, flawless, and long-lasting finish.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="/app/assets/images/12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Makeup Bundle</h5>
+                  <p class="card-text">A complete makeup bundle featuring essential products for a flawless look, 
+                    including foundation, lipstick, eyeshadow, and more, perfect for any occasion.</p>
+                  <a href="#" class="btn btn-primary">Add</a>
+                </div>
+              </div>
+        </div>
+    </div>
+            
         </div>
     </div>
 </body>
