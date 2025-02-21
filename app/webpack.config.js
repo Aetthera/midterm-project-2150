@@ -8,6 +8,7 @@ module.exports = {
     global: path.resolve(__dirname, "app/global.js"),
     index: path.resolve(__dirname, "app/index.js"),
     listProducts: [path.resolve(__dirname, "app/list-products.js"), path.resolve(__dirname, "app/list-products.scss")],
+    addProducts: [path.resolve(__dirname, "app/add-products.js"), path.resolve(__dirname, "app/add-products.scss")],
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -67,6 +68,11 @@ module.exports = {
       template: "./app/list-products.html",
       chunks: ["listProducts", "global"],
       filename: "list-products.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./app/add-products.html",
+      chunks: ["addProducts", "global"],
+      filename: "add-products.html",
     }),
   ],
   optimization: {
