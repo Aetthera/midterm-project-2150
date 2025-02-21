@@ -4,6 +4,8 @@ import './index.scss';
 import enginakyurt from "./assets/images/pexels-enginakyurt-4458519.jpg";
 import quangVietNguyen from "./assets/images/pexels-quang-viet-nguyen-107013384-9561297.jpg";
 import yaazhini from "./assets/images/pexels-yaazhini-17307532.jpg";
+import "./list-products.js";
+import "./list-products.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
 
